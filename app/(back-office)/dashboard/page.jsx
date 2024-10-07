@@ -1,3 +1,4 @@
+import CustomersDataTable from "@/components/backoffice/CustomersDataTable";
 import DashboardCharts from "@/components/backoffice/DashboardCharts";
 import Heading from "@/components/backoffice/Heading";
 import LargeCards from "@/components/backoffice/LargeCards";
@@ -10,6 +11,7 @@ function page() {
     <LargeCards />
     <SmallCards />
     <DashboardCharts />
+    <CustomersDataTable />
   </div>;
 }
 
