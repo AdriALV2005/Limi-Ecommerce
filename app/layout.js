@@ -1,4 +1,5 @@
-import '../styles/main.scss'
+import Providers from "@/context/Providers";
+import "../styles/main.scss";
 
 export const metadata = {
   title: "Limi-Ecommerce",
@@ -7,8 +8,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html className = 'dark'>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

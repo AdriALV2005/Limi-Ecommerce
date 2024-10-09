@@ -81,10 +81,12 @@ export default function WeeklySalesChart() {
 
   const [chartTodDisplay, setChatTodDisplay] = useState(tabs[0].type);
   return (
-    <div className="bg-slate-700 p-8 rounded-lg">
-      <h2 className="text-xl font-bold mb-4">Best Selling Charts</h2>
+    <div className="dark:bg-slate-700 bg-slate-50 p-8 rounded-lg shadow-xl">
+      <h2 className="text-xl font-bold mb-4 text-slate-800 dark:text-slate-50">
+        Weekly Sales
+      </h2>
       <div className="p-4">
-        <div className="text-sm font-medium text-center text-gray-200 border-b border-gray-400 dark:text-gray-400 dark:border-gray-700">
+        <div className="text-sm font-medium text-center text-gray-200 border-b border-gray-700 dark:text-gray-400 dark:border-gray-400 ">
           <ul className="flex flex-wrap -mb-px">
             {tabs.map((tab, i) => {
               return (
@@ -94,7 +96,7 @@ export default function WeeklySalesChart() {
                     className={
                       chartTodDisplay == tab.type
                         ? "inline-block p-4 text-orange-600 border-b-2 border-orange-600 rounded-t-lg active dark:text-orange-500 dark:border-orange-500"
-                        : "inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-300 hover:border-gray-100 dark:hover:text-gray-100"
+                        : "inline-block p-4 border-b-2 border-transparent rounded-t-lg text-slate-800 hover:text-gray-700 hover:border-gray-100 dark:hover:text-gray-100"
                     }
                   >
                     {tab.title}

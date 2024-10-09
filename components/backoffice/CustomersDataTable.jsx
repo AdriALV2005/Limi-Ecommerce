@@ -12,8 +12,10 @@ export default function CustomersDataTable() {
   const itemEndIndex = Math.min(startIndex + PAGE_SIZE, data.length);
 
   return (
-    <div className="">
-      <h2 className="text-xl font-bold mb-4">Recent Orders</h2>
+    <div className="mt-8">
+      <h2 className="text-xl font-bold mb-4 text-slate-800 dark:text-slate-50 px-4">
+        Recent Orders
+      </h2>
       <div className="p-8">
         <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
           <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -134,7 +136,7 @@ export default function CustomersDataTable() {
                       className={
                         currentPage === index + 1
                           ? "flex items-center h-10 justify-center px-3 leading-tight text-gray-50 bg-blue-600 "
-                          : "flex items-center justify-center dark:hover:text-white h-10 px-3 border  border-gray-300 leading-tight text-gray-500 dark:hover:bg-gray-700 bg-gray-800 dark:border-gray-700 "
+                          : "flex items-center justify-center px-3 h-10 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                       }
                     >
                       {index + 1}
