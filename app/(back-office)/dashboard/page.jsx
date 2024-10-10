@@ -6,13 +6,15 @@ import SmallCards from "@/components/backoffice/SmallCards";
 import React from "react";
 
 function page() {
-  return <div>
-    <Heading  title="Dashboard Overwiev"/>
-    <LargeCards />
-    <SmallCards />
-    <DashboardCharts />
-    <CustomersDataTable />
-  </div>;
+  return (
+    <div>
+      <Heading title="Dashboard Overwiev" />
+      <LargeCards />
+      <SmallCards />
+      <DashboardCharts />
+      <CustomersDataTable />
+    </div>
+  );
 }
 
 export default page;
